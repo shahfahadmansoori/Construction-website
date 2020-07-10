@@ -1,0 +1,21 @@
+{
+  "name": "constructlandingpage",
+  "version": "1.0.0",
+  "description": "its a contruction layout",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html"
+  },
+  "author": "Shah Fahad Mansoori",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "eslint": "^6.8.0",
+    "parcel-bundler": "^1.12.4"
+  }
+}
