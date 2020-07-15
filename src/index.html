@@ -66,11 +66,9 @@
               <a class="nav-link " href="#news">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="#update">UPDATE</a>
+              <a class="nav-link " href="#contactus">CONTACT US</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#">CONTACT US</a>
-            </li>
+           
           
             <li class="nav-item">
               <a class="nav-link " href="#"><i class="fas fa-search"></i></a>
@@ -759,10 +757,54 @@
         </div>
       </div>
     </section>
-    <section class="update pb-5 text-center" id="update">
-      <h2>Don't miss out, Stay updated</h2>
-      <p class="py-4">copyright</p>
+    <section class="contact-us py-5 text-center" id="contactus">
+      <div class="py-4 text-center">
+        <h6>We Offer</h6>
+        <h2><span>World</span> News Construction</h2>
+        <p
+          >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt<br />
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+        </p>
+      </div>
+      <div class="container">
+        <div class="wrapper">
+          <div class="contact">
+            <h3>Email Us</h3>
+            <div class="alert">Your message has been sent</div>
+            <form id="contactForm" method="POST" data-netlify="true">
+              <p>
+                <label>Name</label>
+                <input type="text" name="name" id="name" required>
+              </p>
+              <p>
+                <label>Company</label>
+                <input type="text" name="company" id="company">
+              </p>
+              <p>
+                <label>Email Address</label>
+                <input type="email" name="email" id="email" required>
+              </p>
+              <p>
+                <label>Phone Number</label>
+                <input type="text" name="phone" id="phone">
+              </p>
+              <p class="full">
+                <label>Message</label>
+                <textarea name="message" rows="5" id="message"></textarea>
+              </p>
+              <p class="field">
+                 <div data-netlify-recaptcha="true"></div>
+              </p>
+              <p class="full">
+                <button type="submit">Submit</button>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
+    </div>
   </div>
   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
