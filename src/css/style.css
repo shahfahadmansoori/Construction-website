@@ -40,6 +40,12 @@ h5 {
 .topbar i {
   color: #ffc000;
 }
+.topbar span {
+  cursor: pointer;
+}
+.topbar span:hover {
+  text-decoration: underline;
+}
 /* Navbar */
 .header {
   background-color: #fff;
@@ -48,8 +54,19 @@ h5 {
   text-decoration: none;
   color: #000;
 }
-.header .nav-link:hover {
-  color: #ffc000;
+.header .nav-link {
+  font-weight: bold;
+}
+
+.header #link:hover:after {
+  transform: scaleX(1);
+}
+.header #link:after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px #ffc000;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
 }
 .navbar-brand,
 .navbar-brand > span {
@@ -59,10 +76,8 @@ h5 {
 }
 
 .navbar-expand-lg .navbar-nav .nav-item {
-  /* padding-right: 2rem;
-  padding-left: 2rem; */
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 .navbar-expand-lg .navbar-nav .nav-link {
   padding-right: 0;
