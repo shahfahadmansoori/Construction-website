@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="scroll">
     <header class="fixed-top">
     <!-- topbar -->
     <div class="topbar py-2 bg-dark ">
@@ -703,7 +702,7 @@
         </div>
       </div>
     </section>
-    <section class="contact-us py-5 text-center" id="contactus">
+    <section class="contact-us py-5 " id="contactus">
       <div class="py-4 text-center">
         <h6>We Offer</h6>
         <h2><span>World</span> News Construction</h2>
@@ -713,45 +712,35 @@
           ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
         </p>
       </div>
-      <div class="container">
-        <div class="wrapper">
-          <div class="contact">
-            <h3>Email Us</h3>
-            <div class="alert">Your message has been sent</div>
-            <form id="contactForm" method="POST" data-netlify="true">
-              <p>
-                <label>Name</label>
-                <input type="text" name="name" id="name" required>
-              </p>
-              <p>
-                <label>Company</label>
-                <input type="text" name="company" id="company">
-              </p>
-              <p>
-                <label>Email Address</label>
-                <input type="email" name="email" id="email" required>
-              </p>
-              <p>
-                <label>Phone Number</label>
-                <input type="text" name="phone" id="phone">
-              </p>
-              <p class="full">
-                <label>Message</label>
-                <textarea name="message" rows="5" id="message"></textarea>
-              </p>
-              <p class="field">
-                 <div data-netlify-recaptcha="true"></div>
-              </p>
-              <p class="full">
-                <button type="submit">Submit</button>
-              </p>
-            </form>
+      <div class="form" name="contact" method="POST" data-netlify="true">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <div class="form-group">
+                <label for="Name" class="">Name</label>
+                <input class="form-control" type="text" id="Name" placeholder="Enter Your Name" required>
+              </div> 
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <label for="Email" class="">Email</label>
+                <input class="form-control" type="email" id="Email" placeholder="Enter Your Email" required>
+              </div>
+            </div>
+            <div class="col-12 mb-3">
+              <label for="Messages">Example textarea</label>
+              <textarea class="form-control" id="Messages" rows="3"></textarea>
+            </div>
+            <div class="col-12">
+              <div class="form-group">
+                <button type="button" class="btn btn-secondary btn-lg btn-block">Submit</button>
+              </div>
+          </div>
           </div>
         </div>
       </div>
-    </section>
-    </div>
-  </div>
+   </section> 
+
   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
