@@ -714,27 +714,27 @@
       </div>
       <div class="container">
         <div class="wrapper">
-          <div class="form" name="contact" method="POST" data-netlify="true">  
+          <form class="form" name="contact" method="POST" data-netlify="true">  
               <div class="row">
                 <div class="form-group col">
                   <label for="Name" class="">Name</label>
-                  <input class="form-control" type="text" id="Name" placeholder="Enter Your Name" required>
+                  <input class="form-control" type="text" name="name" id="Name" placeholder="Enter Your Name" required>
                 </div>  
                 <div class="form-group col">
                   <label for="Email" class="">Email</label>
-                  <input class="form-control" type="email" id="Email" placeholder="Enter Your Email" required>
+                  <input class="form-control" type="email" id="Email" name="id" placeholder="Enter Your Email" required>
                 </div>
               </div>
             <div class="form-group  mb-3 w-100">
               <label for="Messages">Example textarea</label>
-              <textarea class="form-control" id="Messages" rows="3" placeholder="Message"></textarea>
+              <textarea class="form-control" type="text" id="Messages" name="message" rows="3" placeholder="Message"></textarea>
             </div>
             <div class="">
               <div class="form-group">
-                <button type="button" class="btn btn-secondary btn-lg btn-block">Submit</button>
+                <button type="button" id="button" name="button" class="btn btn-secondary btn-lg btn-block">Submit</button>
               </div>
           </div>
-          </div>
+          </form>
         </div>
       </div>
    </section> 
