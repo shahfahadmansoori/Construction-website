@@ -592,31 +592,29 @@
           ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
         </p>
       </div>
-      <div class="container">
-        <div class="wrapper">
-          <form class="form" name="contact" method="POST" data-netlify="true" netlify="">  
-              <div class="row">
-                <div class="form-group col">
-                  <label for="Name" class="">Name</label>
-                  <input class="form-control" type="text" name="name" id="Name" placeholder="Enter Your Name" required="">
-                </div>  
-                <div class="form-group col">
-                  <label for="Email" class="">Email</label>
-                  <input class="form-control" type="email" id="Email" name="id" placeholder="Enter Your Email" required="">
-                </div>
-              </div>
-            <div class="form-group  mb-3 w-100">
-              <label for="Messages">Example textarea</label>
-              <textarea class="form-control" type="text" id="Messages" name="message" rows="3" placeholder="Message"></textarea>
-            </div>
-            <div class="">
-              <div class="form-group">
-                <button type="button" id="button" name="button" class="btn btn-secondary btn-lg btn-block">Submit</button>
-              </div>
-          </div>
-          </form>
-        </div>
-      </div>
+      <form name="contact" method="POST" data-netlify="true">
+        <p>
+          <label>Your Name: <input type="text" name="name"></label>   
+        </p>
+        <p>
+          <label>Your Email: <input type="email" name="email"></label>
+        </p>
+        <p>
+          <label>Your Role: <select name="role[]" multiple="">
+            <option value="leader">Leader</option>
+            <option value="follower">Follower</option>
+          </select></label>
+        </p>
+        <p>
+          <label>Message: <textarea name="message"></textarea></label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+      
+        
+       
    </section> 
 
   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
